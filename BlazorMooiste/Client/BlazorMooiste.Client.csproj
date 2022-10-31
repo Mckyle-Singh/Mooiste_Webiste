@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Pages\Admin\Categories.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.9" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.9" PrivateAssets="all" />
 	 
@@ -24,9 +20,4 @@
   <ItemGroup>
     <ProjectReference Include="..\Shared\BlazorMooiste.Shared.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Pages\Admin\Categories.razor" />
-  </ItemGroup>
-
 </Project>
