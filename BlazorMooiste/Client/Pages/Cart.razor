@@ -33,11 +33,11 @@ else
                         Delete
                     </button>
                 </div>
-                <div class="cart-product-price">$@(product.Price * product.Quantity)</div>
+                <div class="cart-product-price">R$@(product.Price * product.Quantity)</div>
             </div>
         }
         <div class="cart-product-price">
-            Total (@cartProducts.Count): $@cartProducts.Sum(product => @product.Price * product.Quantity)
+            Total (@cartProducts.Count): R$@cartProducts.Sum(product => @product.Price * product.Quantity)
         </div>
     </div>
     @if (isAuthenticated)
