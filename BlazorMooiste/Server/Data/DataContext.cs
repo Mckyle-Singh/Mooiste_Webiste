@@ -37,20 +37,20 @@ namespace BlazorMooiste.Server.Data
                 new Category
                 {
                     Id = 1,
-                    Name = "Books",
-                    Url = "books"
+                    Name = "Accessories",
+                    Url = "accessories"
                 },
                 new Category
                 {
                     Id = 2,
-                    Name = "Movies",
-                    Url = "movies"
+                    Name = "Jewellery",
+                    Url = "jewellery"
                 },
                 new Category
                 {
                     Id = 3,
-                    Name = "Video Games",
-                    Url = "video-games"
+                    Name = "Clothing",
+                    Url = "clothing"
                 }
                 );
 
