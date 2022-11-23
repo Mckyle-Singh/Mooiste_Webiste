@@ -16,7 +16,7 @@ namespace BlazorMooiste.Server.Services.PaymentService
             IAuthService authService,
             IOrderService orderService)
         {
-            StripeConfiguration.ApiKey = "pk_test_51Lyj1GLEGZ910R9uEBZ8lT2Bkzl3KsHj7juCw8irTKlmOimS6GzaOv1M4jXUGyIhVwz8NYuaVP3BCKTpXR5gBnZi00rbEBXxNR";
+            StripeConfiguration.ApiKey = "sk_test_51M7OkoHUnFe2RSQ45u7uaNVWoPMERz8jz322lKphO04dXm76rfG0NPbIUszsE7v2aOPVlirG3CDwjcguSRf5VpvU00jV0CAoFz";
 
             _cartService = cartService;
             _authService = authService;
@@ -36,7 +36,6 @@ namespace BlazorMooiste.Server.Services.PaymentService
                     ProductData = new SessionLineItemPriceDataProductDataOptions
                     {
                         Name = product.Title,
-                        Images = new List<string> { product.ImageUrl }
                     }
                 },
                 Quantity = product.Quantity

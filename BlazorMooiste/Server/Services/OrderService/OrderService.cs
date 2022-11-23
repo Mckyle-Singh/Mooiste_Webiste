@@ -45,7 +45,6 @@
             orderDetailsResponse.Products.Add(new OrderDetailsProductResponse
             {
                 ProductId = item.ProductId,
-                ImageUrl = item.Product.ImageUrl,
                 ProductType = item.ProductType.Name,
                 Quantity = item.Quantity,
                 Title = item.Product.Title,
@@ -76,8 +75,7 @@
                 Product = o.OrderItems.Count > 1 ?
                     $"{o.OrderItems.First().Product.Title} and" +
                     $" {o.OrderItems.Count - 1} more..." :
-                    o.OrderItems.First().Product.Title,
-                ProductImageUrl = o.OrderItems.First().Product.ImageUrl
+                    o.OrderItems.First().Product.Title
             }));
 
             response.Data = orderResponse;

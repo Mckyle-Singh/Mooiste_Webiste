@@ -19,6 +19,9 @@ else
         {
             <div class="container">
                 <div class="name">
+                    <div class="image-wrapper">
+                    <img src="@product.ImageUrl" class="image" />
+                </div>
                     <h5><a href="/product/@product.ProductId">@product.Title</a></h5>
                     <span>@product.ProductType</span><br />
                     <input type="number" value="@product.Quantity"
@@ -34,7 +37,7 @@ else
             </div>
         }
         <div class="cart-product-price">
-            Total (@cartProducts.Count): $@cartProducts.Sum(product => @product.Price * product.Quantity)
+            Total (@cartProducts.Count): R @cartProducts.Sum(product => @product.Price * product.Quantity)
         </div>
     </div>
     @if (isAuthenticated)
